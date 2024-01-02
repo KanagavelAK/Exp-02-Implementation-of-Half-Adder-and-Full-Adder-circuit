@@ -1,3 +1,5 @@
+### NAME: Kanagavel A K
+###   Register No: 212223230096
 # Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
 
 # Implementation-of-Half-Adder-and-Full-Adder-circuit
@@ -38,17 +40,49 @@ If the output is 1, then the led glows.
 Program:
 /*
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+### Developed by: Kanagavel A K
+### RegisterNumber: 212223230096 
+# Half Adder:
+```
+module halfadder(a,b,sum,carry);
+input a,b;
+output sum,carry;
+xor(sum,a,b);
+and(carry,a,b)
+endmodule
+```
+# Full adder:
+```
+module halfadder(a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+xor(sum,a,b,c);
+assign carry=a&b | b&c | a&c
+endmodule
+```
 */
-Logic symbol & Truthtable
-RTL realization
+## Truthtable
+### Half Adder:
+![image](https://github.com/KanagavelAK/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/151514454/b74d1022-b67e-44ae-8385-b2edbc025d74)
 
-### Output:
-### RTL
-### TIMING DIAGRAM
+### Full Adder:
+![image](https://github.com/KanagavelAK/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/151514454/d9b4af75-4562-4300-88ed-51a451db467a)
 
+## RTL realization
+### Half Adder:
+![image](https://github.com/KanagavelAK/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/151514454/b462d716-1004-403c-8fb8-d883a01f4c17)
 
-### TRUTH TABLE 
+### Full Adder:
+![image](https://github.com/KanagavelAK/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/151514454/55b823b2-08ad-4c39-8237-93720150f8e0)
+
+### Waveform:
+### Half Adder:
+![image](https://github.com/KanagavelAK/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/151514454/c9c86bf5-f97c-4cc5-aadd-c662d0ac008e)
+
+### Full Adder:
+![image](https://github.com/KanagavelAK/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/151514454/02aea9c1-5cdb-4e3c-996b-f021f349a783)
+
 
 ### Result:
+To design a half adder and full adder circuit and verify its truth table in Quartus using Verilog programming
+
